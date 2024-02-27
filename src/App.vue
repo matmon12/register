@@ -3,7 +3,7 @@ import Home from './components/Home.vue'
 </script>
 
 <template>
-  <Home msg="kdfhgkldfhgklhdfkgjhysdklfjhgkdjfhgkjdhfsklg" />
+  <Home msg="kdfhgkldfhgkl" />
 </template>
 
 <style scoped lang="scss">
