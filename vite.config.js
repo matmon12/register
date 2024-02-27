@@ -4,6 +4,7 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/vite-pack/',
   plugins: [
     vue(),
     ViteImageOptimizer({
@@ -49,6 +50,3 @@ export default defineConfig({
   ],
 });
 
-export default {
-  base: '/rol-shop/'
-}
