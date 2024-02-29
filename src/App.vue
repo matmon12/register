@@ -1,10 +1,10 @@
-<script setup>
-import Home from './components/Home.vue'
-</script>
-
 <template>
-  <Home msg="kdfhgkldfhgkl" />
+  <main>
+    <router-view></router-view>
+  </main>
 </template>
 
-<style scoped lang="scss">
-</style>
+<script setup></script>
+
+
+<style scoped lang="scss"></style>
