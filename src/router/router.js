@@ -1,7 +1,7 @@
 import {createRouter, createWebHistory} from "vue-router";
 import Home from "@/pages/Home.vue";
 const routes = [
-  { path: '/vite-pack/', name: "Home", component: Home }
+  { path: '/register/', name: "Home", component: Home }
 ]
 
 const router  = createRouter({
