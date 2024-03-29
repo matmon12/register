@@ -11,7 +11,6 @@ import { PrimeVueResolver } from "unplugin-vue-components/resolvers";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/register/",
   server: {https: true, port: 443},
   plugins: [
     vue(),
@@ -69,7 +68,5 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  css: {
-    
-  }
+  base: "/register/",
 });
