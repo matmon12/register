@@ -2,6 +2,7 @@ import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { defineConfig } from "vite";
 import { fileURLToPath, URL } from "node:url";
 import vue from "@vitejs/plugin-vue";
+import mkcert from 'vite-plugin-mkcert'
 import Icons from "unplugin-icons/vite";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
@@ -11,8 +12,10 @@ import { PrimeVueResolver } from "unplugin-vue-components/resolvers";
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "/register/",
+  server: {https: true, port: 443},
   plugins: [
     vue(),
+    mkcert(),
     ViteImageOptimizer({
       svg: {
         multipass: true,
